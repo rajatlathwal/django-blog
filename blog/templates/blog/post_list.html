@@ -16,8 +16,17 @@
 
         <div>
             
-            <h2><a href="">My Blog</a></h2>
-            <p>This is my first blog and I have not decided yet on what it's gonna be ! So, any of you , who has any suggestion is cordially welcome . Feel free to contact me !!! </p>
+            <h2><a href=""></a></h2>
+            <p>This is my first blog and I am obviously not a pro at blogging ! So, any of you , who has any suggestion is cordially welcome . Feel free to contact me !!! </p>
         </div>
+	<div>
+		{% for post in posts %}
+		   <div>
+			</br><p>published: {{ post.published_date }}</p>
+			<h3><a href="">{{ post.title }}</a></h3>
+			<p>{{ post.text|linebreaksbr }}</p>
+		   </div>
+		{% endfor %}
+	</div>
     </body>
 </html>
