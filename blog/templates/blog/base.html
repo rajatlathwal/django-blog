@@ -1,0 +1,35 @@
+{% load staticfiles %}
+<html>
+    <head>
+        <title>Rajat's blog</title>
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-	theme.min.css">
+	<link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    </head>
+    <body>
+    <div>
+            <h1><a href="/"><marquee>Welcome to my blog !!!</marquee></a></h1>
+        </div>
+
+        <div class="intro">
+            
+            <h2>ABOUT ME</h2>
+            <p> Hello ! everyone . This is Rajat Kumar Lathwal , a computer science undergraduate  pursuing his engineering from Maulana Azad National Institute Of Technology,Bhopal . Here's a link to my college website in case you wish to visit :p</br><a href="http://www.manit.ac.in/">MANIT,Bhopal</a>
+         </p>
+        
+            
+            <h2><a href=""></a></h2>
+            <p>This is my first blog and I am obviously not a pro at blogging ! So, any of you , who has any suggestion is cordially welcome . Feel free to contact me !!! </p>
+        </div></br></br>
+	<div>
+    <div class="content container">
+        <div class="row">
+            <div class="col-md-8">
+            {% block content %}
+            {% endblock %}
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+h1 a{
+ color:#20e83f;
+ font-weight:bold;
+}
+
+body{
+ padding-left:15px;
+}
+
+.intro{
+ padding-left:95px;
+ padding-right:95px;
+}
+
+.intro h2{
+ background-color:#acf9b8;
+ color:#1aa52f;
+font-family:'Lobster';
+}
+
+h2 a{
+ color:#1aa52f;
+ font-family:'Lobster';
+}
+
+.post h2{
+ background-color:#acf9b8;
+}
+
+.post h2 a{
+ color:#1aa52f;
+ font-family:'Lobster';
+}
+
+.post{
+ margin-bottom: 70px;
+
+}
+
+.date{
+ color: #828282;
+}
