@@ -9,8 +9,11 @@
     </head>
     <body>
     <div>
-            <h1><a href="/"><marquee>Welcome to my blog !!!</marquee></a></h1>
-        </div>
+	{% if user.is_authenticated %}
+        <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>   
+	{% endif %}
+	<h1><a href="/"><marquee>Welcome to my blog !!!</marquee></a></h1>
+    </div>
 
         </br>
 	<div>
